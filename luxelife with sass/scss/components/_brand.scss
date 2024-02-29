@@ -1,0 +1,58 @@
+.brand-area{
+    .container-fluid{
+            background: whitesmoke;
+            display: grid;
+            place-items: center;
+        .slider1{
+            height: 12rem;
+            background: #fff;
+            box-shadow: 0 .8rem 1.4rem  -.2rem #0001;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            max-width: 95% ;
+
+            ul.brands{
+                list-style: none;
+                width: $total-logo-width;
+                display: flex;
+                align-items: center;
+                animation: slideleft  $animation-duration  infinite linear;
+                .brand-logo{
+                    width: $logo-width;
+                    margin-left: 30px;    
+                }
+            }
+            &:hover ul.brands{
+                animation-play-state: paused;
+            }
+        }
+        .slider2{
+            height: 12rem;
+            background: #fff;
+            box-shadow: 0 .8rem 1.4rem  -.2rem #0001;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            max-width: 95% ;
+            ul.brands{
+                list-style: none;
+                width: $total-logo-width;
+                display: flex;
+                animation: slideright  $animation-duration  infinite linear;
+                li.brand-logo{
+                    width: $logo-width;
+                    margin-left: 30px;    
+                }
+            }
+            &:hover ul.brands{
+                animation-play-state: paused;
+            }
+        }
+    }
+}
+
+
+
+
+

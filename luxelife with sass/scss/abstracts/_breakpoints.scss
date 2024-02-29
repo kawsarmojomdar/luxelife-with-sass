@@ -1,0 +1,96 @@
+// MEDIA QUERY MANAGEMENT BREAKPOINTS
+
+// 0 - 600px:          Phone
+// 600px - 900px:      Tablet Portrait
+// 900px - 1200px:     Tablet Landscape
+// [1200 - 1800]       is where our normal style apply;
+// 1800 + ::after      big desktop
+
+$breakpoints: (
+  "xs": 0, 
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px
+);
+
+@mixin xs {
+  @media (max-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (max-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+.responsive-test {
+  
+ background: red;
+ color: white;
+  @include breakpoint(1600px) {
+    color: pink;
+    background: darkblue;
+  }
+  @include xxl {
+    color: darkgreen;
+    background: deeppink;
+  }
+  @include xl {
+    color: orange;
+    background: forestgreen;
+  }
+  @include lg {
+    color: purple;
+    background: firebrick;
+  }
+  @include md {
+    color: green;
+    background: yellow;
+  }
+  @include sm {
+    color: blue;
+    background: darkgray;
+  }
+  @include xs {
+    color: red;
+    background: rebeccapurple;
+  }
+  
+  
+}
+
+
+

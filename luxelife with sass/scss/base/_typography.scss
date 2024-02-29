@@ -1,0 +1,31 @@
+html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    body{
+        font-family: "Rajdhani", "Rubik", sans-serif;
+        font-weight: 400;
+        line-height: 1.7;
+        color: $black;
+        overflow-x: hidden;
+        @include lg{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        @include md{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        @include sm{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+    }
+}

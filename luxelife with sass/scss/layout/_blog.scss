@@ -1,0 +1,94 @@
+.blog-area{
+    padding: 120px 0;
+    @include lg{
+        padding: 80px 0;
+    }
+    @include md{
+        padding: 50px 0;
+    }
+    @include sm{
+        padding: 30px 0;
+    }
+    .container{
+        position: relative;
+        .header{
+            margin-bottom: 40px;
+            h2{
+                @extend %heading2;
+            }
+            h1{
+                @extend %heading1;
+            }
+        }
+        .card-wrapper{
+            border: 1px solid $bg-white;
+            &:hover .card-content{
+                border-bottom: 1px solid $yellow;
+                a{
+                    background: $yellow;
+                    color:  $white;
+                    svg{
+                        color: $white;
+                    }
+                }
+            }
+            .card-img{
+                position: relative;
+                span{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 10px 20px;
+                    color: $white;
+                    display: inline-block;
+                    background: $yellow;
+                }
+            }
+            .card-content{
+                padding: 30px;
+                h3{
+                    @extend %heading3;
+                    padding: 30px 0;
+                }
+                a{
+                    text-transform: uppercase;
+                    @extend %normal-btn;
+                    display: inline-block;
+                    svg{
+                        color: $yellow;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        span.slick-arrow{
+            background: $yellow;
+            color: $white;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 20px;
+            padding: 10px;
+            position: absolute;
+            right: 200px;
+            top: -100px;
+            border-radius: 50%;
+            &:hover{
+                background: $bg-white;
+                color: $black;
+            }
+            @include md{
+                top: -50px;
+                right: 100px;
+                z-index: 999;
+            }
+        }
+        span.slick-prev{
+            right: 130px;
+            @include md{
+                right: 50px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,190 @@
+
+    .hero-area{
+        
+        .container-fluid{
+            .hero-wrapper{
+                .row{
+                    .hero-left{             
+                        position: relative;
+                      
+
+                        .hero-img{
+                            height: 800px;
+                            // @include xxl{
+                            //     height: 700px;
+                            // }
+                            // @include xl{
+                            //     height: 600px;
+                            // }
+                            // height: 100vh;
+                            background: linear-gradient(90.52deg, #000000 0.47%, rgba(0, 0, 0, 0) 99.58%), url(concrete-interior-room-with-blue-armchair-empty-dark-wall);
+                            background-image: url(./../img/bg/bg-1.png);
+                            background-position:center ;
+                            background-color: rosybrown;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            background-size: cover;
+                        }
+                        .hero-text{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            text-align: left;
+                            right: 0;
+                            z-index: 9;
+                            color: $white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin: 0 20%;
+                            @include xxl{
+                                margin: 0 5%;
+                            }
+                            
+                            @include lg{
+                                margin: 0 15%;
+                            }
+                            
+                            @include md{
+                                margin: 0 10%;
+                            }
+                            h1{
+                                color: $white;
+                                font-size: 70px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 115%; /* 99.639px */
+                                @include xl{
+                                    font-size: 60px;
+                                }
+                                @include lg{
+                                    font-size: 55px;
+                                }
+                                @include md{
+                                    font-size: 50px;
+                                }
+                                @include sm{
+                                    font-size: 45px;
+                                }
+                            }
+                            p{
+                                @extend %paragraph;
+                                margin:  30px 0 ;
+                                // @include sm{
+                                //     text-align: left;
+                                // }
+                            }
+                            
+                            .hero-person{
+                                display: flex;
+                                align-items: center;
+                                @include sm{
+                                    flex-direction: column;
+                                    align-items: start;
+                                }
+                                a{
+                                    display: block;
+                                    @extend %button-style;
+                                    margin-right: 25px;
+                                    @include sm{
+                                        margin: 30px 0;
+                                    }
+                                }
+                                .persons{
+                                    @include breakpoint(300px){
+                                        flex-direction: column;
+                                    }
+                                    .hero-person-img{
+                                    
+                                        img{
+                                            &:first-child{
+                                                margin-left: 0;
+                                            }
+                                            border-radius: 50%;
+                                            border: 2px solid $white;
+                                            margin-left: -25px;
+        
+                                        }
+                                    }
+                                    .person-num{
+                                        margin-left: 10px;
+                                        h5{
+                                            font-family: Rajdhani;
+                                            font-size: 32px;
+                                            font-weight: 700;
+                                            line-height: 42px;
+                                            letter-spacing: 0px;
+                                        }
+                                        p{
+                                            font-family: Rubik;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 30px;
+                                            letter-spacing: 0px;
+                                        }
+        
+                                    }
+                                }
+                                
+    
+                            }
+                        }
+                    
+                    }
+
+                .hero-right{
+                    padding-top: 40%;
+                    padding-left: 50px;
+                    @include lg{
+                        padding: 25px  ;
+                    }
+                    h3{
+                        @extend %heading3;           
+                    }
+                    a{
+                        @extend %normal-btn;
+                        display: inline-flex;
+                        margin: 20px 0;
+                        @include sm{
+                            margin-top: 10px;
+                            padding: 10px 10px;
+                        }
+                        margin-right: 10px;
+                        &:hover, &:active{
+                            @extend %button-style;
+                            @include sm{
+                                margin-top: 10px;
+                                padding: 10px 10px;
+                            }
+                        }
+                    }
+                    .active{
+                            @extend %button-style;
+                            @include sm{
+                                margin-top: 10px;
+                                padding: 10px 10px;
+                            }
+                    }
+                    .showcase-active{
+                        margin-top: 20px;
+                        @include lg{
+                            margin-top: 10px;
+                        }
+                        img{
+                            margin-right: 10px;
+                            margin-bottom: 20px;
+                            @include lg{
+                                margin-bottom: 10px;
+                            }
+
+                        }
+                    
+                    }
+                        
+                    }
+                }
+            }
+        }
+    }

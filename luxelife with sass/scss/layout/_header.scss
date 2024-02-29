@@ -1,0 +1,181 @@
+.header-area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: $bg-white;
+    color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    @include lg{
+        padding: 20px 10px;
+    }
+    @include md{
+        padding: 15px 5px;
+    }
+    
+
+    #check{
+        display: none;
+    }
+    label.icons{
+        @extend %font-icon;
+        line-height: 25px;
+        font-size: 20px;
+        position: fixed;
+        top: 20px;
+        right: 5%;
+        z-index: 9999999999;
+        display: none;
+        color: $black;
+            @include sm{
+            display: block;
+            &::before{
+                background: $bg-white;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                position: absolute;
+                right: -16px;
+                top: -11px;
+                content: "";
+                z-index: -1;
+                border: 3px solid $yellow;
+            }
+        }    
+    }
+    #check:checked ~ nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #check:not(:checked) ~ .icons #cross-icon{
+        display: none;
+    }
+    #check:checked ~ .icons #check-icon{
+        display: none;
+    }
+    
+    .navigation{
+        
+        display: inherit;
+        @include lg {
+            display: block;
+            background: $bg-white;
+            color: $black;
+            left: 0;
+            width: 100%;
+            z-index: 999999;
+            position: absolute;
+            top: 100%;
+          }
+          @include sm {
+            &__list{
+            flex-direction: column;
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: $bg-white;
+            color: $yellow;
+            text-align: center;
+            left: 0;
+            width: 100%;
+            z-index: 999999;
+            display: none;
+            
+         }
+
+          
+     
+        &__list{
+            display: flex;
+            justify-content: space-around;
+        }
+        &__item{
+            padding: 20px 14px;
+            position:relative;
+            transition: all .5s ease;
+
+            @include lg{
+                padding: 15px 2px;
+            }
+            @include md{
+                padding: 15px 5px;
+            }
+            &::after{
+                content: "\25BC";
+                margin-top: 2px;
+                margin-right: 4px;
+                font-size: 8px;
+                @include md{
+                    margin-right: 6px;
+                }
+            }
+            .nasted__list{
+                flex-direction: column;
+                position: absolute;
+                z-index: 999;
+                top: 130%;
+                left: 0;
+                width: 200px;
+                background-color: $yellow;
+                transition: all .3s ease;
+                opacity: 0;
+                visibility: hidden;
+
+                .nasted__item{
+                    padding: 10px 5px;
+                    transition: all .3s ease;
+                    &:hover{
+                        background-color: $bg-white;
+                        color: $black;
+                        padding-left: 26px ;
+                    }
+                    .nasted__link{
+                        text-decoration: none;
+                    }
+                }
+            }
+            &:hover{
+                background: $yellow;
+                color: $white;
+                .nasted__list{
+                    top: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        &__link{
+            text-decoration: none;
+        }
+              
+    }
+    
+    .header-btn {
+        
+        a{
+            @extend %button-style;
+            color: $white;
+            @include sm{
+                padding:  10px 5px;
+            }
+            @include breakpoint(300px){
+                padding: 2px;
+                display: inline-flex;
+            }
+           
+        }
+        @include sm{
+            margin-right: 14%;
+        }
+
+    }
+    
+    
+
+}

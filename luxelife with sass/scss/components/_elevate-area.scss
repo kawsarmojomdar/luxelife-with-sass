@@ -1,0 +1,148 @@
+body{
+    .elevate-area{
+        background: $bg-white;
+        padding: 80px 0;
+        .container{
+            .row{
+                .left-side-wrapper{
+                    .img-left{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .num-text{
+                            background: $yellow;
+                            display: inline-flex;
+                            flex-direction: column;
+                            border-width: 20px 30px ;
+                            border-color: #F0E8DB ;
+                            border-style: solid;
+                            margin-right: -23px;
+                            text-align: center;
+                            padding: 15px;
+                            font-family: Rubik;
+                            color: $white;
+                            @include sm{
+                                border-width: 10px 15px;
+                                padding: 3px;
+                            }
+                            span{
+                                font-family: Rajdhani;
+                                font-size: 48px;
+                                font-weight: 700;
+                                line-height: 60px;
+                                letter-spacing: 0px;
+                                @include sm{
+                                    font-size: 28px;
+                                    line-height: 25px;
+                                }
+                            }
+                            p{
+                                @extend %paragraph;
+                                @include sm{
+                                }
+                            }
+                        }
+                    }
+                    .img-right{
+                        padding-top: 60px;
+                    }
+                }
+
+                .right-side-wrapper{
+                    padding-top: 70px;
+                    @include lg{
+                        padding-top: 40px;
+                    }
+                    .heading-container{
+                        h2{
+                            @extend %heading2;
+                            span{
+                                position: relative;
+                                margin-left: 10px;
+                                &::after{
+                                    display: block;
+                                    width: 40px ;
+                                    height: 2px;
+                                    background: $yellow;
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                }
+                            }
+                        }
+                        
+                    }
+                    h1{
+                        @extend %heading1;
+                    }
+                    p{
+                        @extend %paragraph;
+                        padding: 20px 0; 
+                        @include xl{
+                            padding: 10px 0;
+                        }   
+                        @include lg{
+                            padding: 5px 0;
+                        }   
+                    }
+                    .work-wrapper{
+                        padding-left: 30px;
+                        margin-top: 20px;
+                        @include lg{
+                            margin-top: 5px;
+                        }
+                        margin-left: 20px;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            width: 2px;
+                            height: 100%;
+                            background: $yellow;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        &::after{
+                            width: 6px ;
+                            height: 6px;
+                            background: $yellow;
+                            content: "";
+                            position: absolute;
+                            left: -2px;
+                            bottom: 0;
+                            border-radius: 50%;
+                        }
+                        span{
+                            position: relative;
+                            margin-left: 10px;
+                            display: block;
+                            &::before{
+                                width: 6px ;
+                                height: 6px;
+                                background: $yellow;
+                                content: "";
+                                position: absolute;
+                                left: -42px;
+                                top:0;
+                                border-radius: 50%;
+                            }
+
+                        }
+                        .work{
+                            h3{
+                                @extend %heading3;
+                            }
+                            p{
+                                @extend %paragraph;
+                            }
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- font rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet"> 
+    <!-- font rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<!-- HEADER SECTION START -->
+<header>
+    <div class="header-area">
+        <div class="logo">
+            <img src="img/logo/logo.png" alt="">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i id="check-icon" class="fa-solid fa-bars"></i>
+            <i id="cross-icon" class="fa-solid fa-xmark"></i>
+        </label>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Home</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">About Us</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Survices</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Projects</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Blog</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Page</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Contact</a>
+                    <ul class="nasted__list">
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                        <li class="nasted__item">
+                            <a href="#" class="nasted__link">Drop Down</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+                
+            
+        </nav>
+        <div class="header-btn">
+            <a href="#">Get a quato</a>
+        </div>
+        
+        
+    </div>
+    
+</header>
+<!-- HEADER SECTION END -->
+
+<!-- HERO SECTION START -->
+<div class="hero-area">
+    <div class="container-fluid p-0">
+        <div class="hero-wrapper">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-xxl-6 ">
+                    <div class="hero-left">
+                        <div class="hero-img" >
+                            dkdssdfjkdsfkjdfslk
+                        </div>
+                        <div class="hero-text">
+                            <h1 class="">Elevate Lifestyle  with Interior</h1>
+                            <p>It is a long established fact that a reader will be distracted byi the readablejk <br> content of a page when looking at its layout desiL</p>
+                            <div class="hero-person">
+                                <a href="#">Learn More +</a>
+                                <div class="persons d-flex">
+                                    <div class="hero-person-img">
+                                        <img src="img/hero/person.png" alt="">
+                                        <img src="img/hero/person2.png" alt="">
+                                        <img src="img/hero/person3.png" alt="">
+                                    </div>
+                                    <div class="person-num">
+                                        <span>4,000 <span>+</span></span>
+                                        <h6>Trusted Clients</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-xxl-6 ">
+                    <div class="hero-right">
+                        <h3>Showcase</h3>
+                        <a href="#" class="active">Mujaic</a>
+                        <a href="#">sofaset</a>
+                        <a href="#">living room</a>
+        
+                        <div class="showcase-wrapper">
+                            <div class="showcase-active">
+                                <img src="img/bg/bg-2.png" alt="">
+                                <img src="img/bg/bg-2.png" alt="">
+                                <img src="img/bg/bg-2.png" alt="">
+                                <img src="img/bg/bg-2.png" alt="">
+                                <img src="img/bg/bg-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+</div>
+<!-- HERO SECTION END -->
+<!-- ELEVATE SECTION START -->
+<div class="elevate-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6  col-xl-6 col-xxl-6">
+                <div class="left-side-wrapper">
+                    <div class="row">
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="img-left">
+                                <img src="img/Rectangle 3061.png" alt="">
+                                <div class="num-text">
+                                    <span>2k+</span>
+                                    <p>Project Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6  col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="img-right">
+                                <img src="img/Rectangle 3062.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="right-side-wrapper">
+                    <div class="heading-container">
+                        <h2>About Us<span></span></h2>
+                    </div>
+                    <h1>Elevate Your Lifestyle with our  Meets Interior Design</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout. Lorem Ipsum is simply dummyj</p>
+                    <div class="work-wrapper">
+                        <span></span>
+                        <div class="work">
+                            <h3>Swift work</h3>
+                            <p>It is a long established fact that a reader will distracted by the readablejk content of a page when looking at its layout time to close.</p>
+                        </div>
+                        <div class="work">
+                            <h3>Express delybary</h3>
+                            <p>It is a long established fact that a reader will distracted by the readablejk content of a page when looking at its layout time to close.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ELEVATE SECTION END -->
+<!-- SERVICE SECTION START -->
+<div class="service-area">
+ 
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-container">
+               <h2> <span class="left-line"></span>our services <span class="right-line"></span></h2>
+                <h3> transportation made easy <br> interior design</h3>
+            </div>
+            <div class="row">
+                <div class=" col-md-4">
+                    <div class="card-wrapper">
+                        <div class="card-icon">
+                            <img src="img/icon/034-blueprint-2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Coastal Chic Interiors</h3>
+                            <p>It is a long established fact that a reader will a be distracted by the readable hklj page kl content of a page layout.</p>
+                            <a href="#">read More</a> <i class="fa-solid fa-arrow-right"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-4">
+                    <div class="card-wrapper">
+                        <div class="card-icon">
+                            <img src="img/icon/035-socket.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Coastal Chic Interiors</h3>
+                            <p>It is a long established fact that a reader will a be distracted by the readable hklj page kl content of a page layout.</p>
+                            <a href="#">read More</a> <i class="fa-solid fa-arrow-right"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-4">
+                    <div class="card-wrapper">
+                        <div class="card-icon">
+                            <img src="img/icon/038-sofa.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Coastal Chic Interiors</h3>
+                            <p>It is a long established fact that a reader will a be distracted by the readable hklj page kl content of a page layout.</p>
+                            <a href="#">read More</a> <i class="fa-solid fa-arrow-right"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SERVISE SECTION END -->
+<!-- PORTFOLIO SECTION START -->
+<div class="portfolio-area">
+    <div class="container">
+        <h2>Our latest portfolio <span></span></h2>
+        <div class="header-container">
+            <h3>Make your house a home <br> with our design</h3>
+            <a href="#">view More <span>+</span></a>
+        </div>
+        <div class="row gy-2">
+            <div class="col-sm-6 portfolio-img">
+                <img src="img/Rectangle 2308.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-img">
+                <img src="img/Rectangle 2311.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-img">
+                <img src="img/Rectangle 2312.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-img">
+                <img src="img/Rectangle 2314.png" alt="">
+            </div>
+            <div class="col-sm-9 portfolio-img">
+                <img src="img/Rectangle 2313.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PORTFOLIO SECTION END -->
+<!-- COUNTER SECTION START -->
+<div class="counter-area">
+    <div class="container-fluid">
+        <div class="container-wrapper">
+            <div class="row">
+                    <div class="col-sm-3 counter-border">
+                        <div class="counter-wrapper">
+                            <span class="counter">200 </span><span>+</span>
+                            <p>Team member</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 counter-border">
+                        <div class="counter-wrapper">
+                            <span class="counter">20 </span><span>+</span>
+                            <p>Winning award</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 counter-border">
+                        <div class="counter-wrapper">
+                            <span class="counter">900 </span><span>+</span>
+                            <p>Client review</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 counter-border">
+                        <div class="counter-wrapper">
+                            <span class="counter">10 </span><span>k+</span>
+                            <p>Complete project</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- COUNTER SECTION END -->
+<!-- VIDEO SECTION START -->
+<div class="video-area">
+    <div class="container-fluid">
+        <div class="img-container">
+            <img src="img/Rectangle 2548.jpg" alt="">
+        </div>
+        <div class="icon-container">
+            <a class="active-video" href="#"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </div>
+</div>
+<!-- VIDEO SECTION END -->
+<!-- PRICE SECTION START -->
+<div class="price-area">
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-md-3 col-sm-6 p-card">
+                <div class="price-card">
+                    <div class="card-img">
+                        <img src="img/price/Rectangle 3855.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Interior Design</h3>
+                        <span>$499</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#">Add to cart</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-card">
+                <div class="price-card">
+                    <div class="card-img">
+                        <img src="img/price/Rectangle 3856.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Room Design</h3>
+                        <span>$499</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#">Add to cart</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-card">
+                <div class="price-card">
+                    <div class="card-img">
+                        <img src="img/price/Rectangle 3857.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Table Design</h3>
+                        <span>$599</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#">Add to cart</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-card">
+                <div class="price-card">
+                    <div class="card-img">
+                        <img src="img/price/Rectangle 3854.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Table Design</h3>
+                        <span>$599</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#">Add to cart</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PRICE SECTION END -->
+<!-- BRAND SECTION START -->
+<!-- BRAND SECTION START -->
+<div class="brand-area">
+    <div class="container-fluid">
+        <div class="slider1 row">
+            <div class="col-10">
+                <ul class="brands">
+                    <li class="brand-logo">
+                        <img src="img/brand/Interior Design.png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Vector(1).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Interior Dreams.png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Vector(1).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Interior Design.png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/Vector(1).png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BRAND SECTION END -->
+<!-- BRAND SECTION START -->
+<div class="brand-area">
+    <div class="container-fluid">
+        <div class="slider2 row">
+            <div class="col-10">
+                <ul class="brands">
+                    <li class="brand-logo">
+                        <img src="img/brand/Interior Design.png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Vector(1).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Interior Dreams.png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Vector(1).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Interior Design.png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/Vector(1).png" alt="">
+                    </li>  
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BRAND SECTION END -->
+<!-- BRAND SECTION END -->
+<!-- TESTOMONIAL SECTION START -->
+<div class="testomonial-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-md-3">
+                <div class="heading">
+                    <h2>Clients Testimonials <span></span></h2>
+                    <h3>Unleash the Potential of your Interiors</h3>
+                </div>
+            </div>
+           <div class=" col-md-9">
+            <div class="testomonial-active">
+                <div class="testomonial-wrapper">
+                    <div class="testomonial-card">
+                        <div class="card-img">
+                            <img src="img/card/Rectangle 2264.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Savannah Nguyen</h3>
+                            <p>Marketing Coordinator</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testomonial-wrapper">
+                    <div class="testomonial-card">
+                        <div class="card-img">
+                            <img src="img/card/Rectangle 2264.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Savannah Nguyen</h3>
+                            <p>Marketing Coordinator</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testomonial-wrapper">
+                    <div class="testomonial-card">
+                        <div class="card-img">
+                            <img src="img/card/Rectangle 2264.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Savannah Nguyen</h3>
+                            <p>Marketing Coordinator</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testomonial-wrapper">
+                    <div class="testomonial-card">
+                        <div class="card-img">
+                            <img src="img/card/Rectangle 2264.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Savannah Nguyen</h3>
+                            <p>Marketing Coordinator</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testomonial-wrapper">
+                    <div class="testomonial-card">
+                        <div class="card-img">
+                            <img src="img/card/Rectangle 2264.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Savannah Nguyen</h3>
+                            <p>Marketing Coordinator</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testomonial-wrapper">
+                    <div class="testomonial-card">
+                        <div class="card-img">
+                            <img src="img/card/Rectangle 2264.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Savannah Nguyen</h3>
+                            <p>Marketing Coordinator</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           </div>
+        </div>   
+    </div>
+</div>
+<!-- TESTOMINIAL SECTION END -->
+<!-- BRAND SECTION START -->
+<div class="brand-area">
+    <div class="container-fluid">
+        <div class="slider1 row">
+            <div class="col-10">
+                <ul class="brands">
+                    <li class="brand-logo">
+                        <img src="img/brand/Frame(2).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Frame(3).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Frame(4).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Frame(1).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Frame(2).png" alt="">
+                    </li>
+                    <li class="brand-logo">
+                        <img src="img/brand/Frame(3).png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BRAND SECTION END -->
+
+<!-- BLOG SECTION START -->
+<div class="blog-area">
+    <div class="container">
+        <div class="header">
+            <h2>blog and news</h2>
+            <h1>Designing Spaces for Every <br> Taste and Budget</h1>
+        </div>
+        <div class="row">
+            <div class="blog-active">
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="img/blog/blog.png" alt="">
+                            <span> <i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Inspiring Designs for Inspired Where Innovation Meets</h3>
+                            <a href="#">Read More  <i class="fa-solid fa-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="img/blog/blog2.png" alt="">
+                            <span> <i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Inspiring Designs for Inspired Where Innovation Meets</h3>
+                            <a href="#">Read More  <i class="fa-solid fa-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="img/blog/blog3.png" alt="">
+                            <span> <i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Inspiring Designs for Inspired Where Innovation Meets</h3>
+                            <a href="#">Read More  <i class="fa-solid fa-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="img/blog/blog.png" alt="">
+                            <span> <i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Inspiring Designs for Inspired Where Innovation Meets</h3>
+                            <a href="#">Read More  <i class="fa-solid fa-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="img/blog/blog2.png" alt="">
+                            <span> <i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Inspiring Designs for Inspired Where Innovation Meets</h3>
+                            <a href="#">Read More  <i class="fa-solid fa-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BLOG SECTION END -->
+<!-- FORM SECTION START -->
+<div class="form-area">
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-6">
+                <div class="form-side">
+                    <div class="header">
+                        <h2>STAY CONNECTED</h2>
+                        <h1>Get A Quote</h1>
+                        <p>Dictum ultrices porttitor amet nec sollicitudin mi molestie adipiscing netus. Lorem at ac ut morbi ullamcorper molestie lacus. Euismod nulla viverra condimentum</p>
+                    </div>
+                    <form action="#">
+                            <div class="row gy-2">
+                                <div class="col-xxl-6 col-xl-6">
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="col-xxl-6 col-xl-6">
+                                    <input type="email" placeholder="E-mail">
+                                </div>
+                                <div class="col-xxl-12 col-xl-12">
+                                    <input id="subject" type="text" placeholder="Subject">
+                                </div>
+                                <div class="col-xxl-12 col-xl-12">
+                                    <textarea placeholder="Massage" name="massage" id="massage" rows="3" ></textarea>
+                                </div>
+                                <div class="col-xxl-12 col-xl-12">
+                                    <a href="#" type="Submit">Submit Now <i class="fa-solid fa-paper-plane"></i></a>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class=" col-lg-6">
+                <img src="img/bg/Image.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FORM SECTION END -->
+<!-- FOOTER SECTION START -->
+<footer>
+    <div class="footer-area-top">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-6 col-md-3">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="img/logo/logolight.png" alt="">
+                        </div>
+                        <p>Lorem Ipsum is simply is dumi omy is text Loremo Ipsum is simply is out no our o dummy text.</p>
+                        <div class="footer-icon">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-6  col-md-3">
+                    <div class="footer-widget">
+                        <h3>Contact</h3>
+                        <p>Lorem Ipsum is simply is dumi omy is text Loremo Ipsum is simply is out no our o dummy text.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope"></i> info@example.com</li>
+                            <li><i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina, 10299</li>
+                            <li><i class="fa-solid fa-phone"></i> (629) 555-0129</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-sm-6  col-md-3">
+                    <div class="footer-widget">
+                        <h3>Get Free Link</h3>
+                    <nav>
+                        <ul class="footer-links">
+                            <li><a href="#"> Software Development</a></li>
+                            <li><a href="#">Data Analytics</a></li>
+                            <li><a href="#">IT Consulting</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Network Solutions</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+                <div class=" col-sm-6  col-md-3">
+                    <div class="footer-widget">
+                        <h3>Newsletter</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text the printing and typesetting industry
+                        </p>
+                        <div class="email">
+                            <input type="email" placeholder="Email here">
+                            <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="left-area">
+                <p>© Yoursitename  2020 | All Rights Reserved</p>
+            </div>
+            <div class="right-area">
+                <ul class="d-flex">
+                    <li><a href="#">Trams & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- fontawsome icon -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js//jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    .counter-area{
+        .container-fluid{
+           
+            .container-wrapper{
+                background-color: $yellow;
+                color: $white;
+            .row{
+                
+                    .counter-border{
+                        border-right: 1px solid $white;
+                        .counter-wrapper{
+                            margin: 80px auto;
+                            text-align: center;
+                            @include lg{
+                                margin: 60px 0 30px;
+                            }
+                            @include sm{
+                                margin: 40px 0 20px;
+                            }
+                            span{
+                                //styleName: Display/D1;
+                                font-family: Rajdhani;
+                                font-size: 68px;
+                                font-weight: 700;
+                                line-height: 78px;
+                                letter-spacing: 0px;
+                                @include lg{
+                                    font-size: 50px;
+                                    line-height:60px;
+                                }
+                                @include sm{
+                                    font-size: 40px;
+                                    line-height:50px;
+                                }
+                            }
+                            p{
+                                @extend %paragraph;
+                                margin-top: 10px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

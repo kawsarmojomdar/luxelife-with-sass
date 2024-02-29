@@ -1,0 +1,127 @@
+@use "variables" as * ;
+
+%button-style {
+    padding: 14px 25px;
+    // color: $white;
+    background-color: $yellow;
+    border-radius: 5px;
+    text-decoration: none;
+}
+%normal-btn {
+    padding: 14px 25px 14px 25px;
+    color: $black;
+    background-color: $light;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid $yellow ;
+}
+//styleName: Button;
+%white-btn {
+    font-family: Rajdhani;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1.2799999713897705px;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+%font-icon{
+    font-family: Font Awesome 6 Free;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+%font-icon2{
+    font-family: Font Awesome 6 Free;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0em;
+}
+%heading1 {
+    font-family: Rajdhani;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    color: $black;
+    text-transform: capitalize;
+    @include xl{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @include lg{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+%heading2 {
+    font-family: Rajdhani;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 4px;
+    color: $yellow;
+    text-transform: uppercase;
+    // @include lg{
+    //     line-height: 20px;
+    //     letter-spacing: 2px;
+    // }
+}
+%headingtwo {
+    //styleName: Heading/H2;
+    font-family: Rajdhani;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0px;
+}
+
+%heading3 {
+    font-family: Rajdhani;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    @include xl{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @include lg{
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+%paragraph{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    @include lg{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+%input{
+    padding: 15px 20px;
+    color: $black;
+    @extend %paragraph;
+    width: 100%;
+    border: 1px solid #E3E3E3;
+    &:focus{
+        outline: none;
+    }
+}
+%before_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+}

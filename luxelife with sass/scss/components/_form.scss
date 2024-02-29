@@ -1,0 +1,64 @@
+.form-area{
+    padding: 80px 0;
+    position: relative;
+    @include lg{
+        padding: 50px 0;
+    }
+    @include md{
+        padding: 30px 0;
+    }
+    @include sm{
+        padding: 20px 0;
+    }
+    &::before{
+        @extend %before_bg;
+        background-image:url(../img/bg/bgvector.png);
+        background-repeat:repeat-x;
+        opacity: .4;
+        pointer-events: none;
+    }
+    .container{
+        .row{
+            .form-side{
+                padding: 10px 20px;
+                
+                .header{
+                    h2{
+                        @extend %heading2;
+                    }
+                    h1{
+                        @extend %heading1;
+                        margin: 20px 0;
+                        @include xl{
+                            margin: 10px 0 0;
+                        }
+                    }
+                    p{
+                        @extend %paragraph;
+                        margin-bottom: 20px;
+                        
+                    }
+                }
+                form{
+                    input{
+                        @extend %input;
+                    }
+                    textarea{
+                       @extend %input;
+
+                    }
+                    a{
+                        @extend %button-style;
+                        display: block;
+                        text-align: center;
+                        text-transform: uppercase;
+                        svg{
+                            margin-left: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+
+.service-area{
+    background-color: rgba($color: $black, $alpha: 1.0);
+    color: $white;
+    position: relative;
+    &::before{
+        @extend %before_bg;
+        background-image: url(../img/Vector.png);
+        opacity: .2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .container-wrapper{
+        padding: 20% 0;
+        @include lg{
+            padding: 15% 0;
+        }
+        @include md{
+            padding: 10% 0;
+        }
+        
+        .container{
+            .header-container{
+                h2{
+                    @extend %heading2;
+                    text-align: center;
+                    padding: 10px;
+                    span.left-line{
+                        position: relative;
+                        text-align: center;
+                        &::before{
+                            position: absolute;
+                            left: -30px;
+                            top: 60%;
+                            content: "";
+                            width: 20px;
+                            height: 2px;
+                            background: $yellow;
+                            text-align: center;
+                        }
+                        
+                    }
+                    span.right-line{
+                        position: relative;
+                        text-align: center;
+                        &::after{
+                            position: absolute;
+                            right: -30px;
+                            top: 60%;
+                            content: "";
+                            width: 20px;
+                            height: 2px;
+                            background: $yellow;
+                            text-align: center;
+                        }
+                        
+                    }
+                    
+                }
+                h3{
+                    @extend %heading1;
+                    color: $white;
+                    text-align: center;
+                    text-transform: capitalize;
+                    margin-bottom: 80px;
+                    @include md{
+                        margin-bottom: 30px ;
+                    }
+                }
+                
+
+            }
+            .row{
+                justify-content: space-between;
+                .col-md-4{
+                    width: 3/1;
+                    .card-wrapper{
+                        @include md{
+                            margin-bottom: 30px;
+                        }
+                        .card-icon{
+                            display: flex;
+                            justify-content: center;
+                            padding-bottom: 30px;
+                        }
+                        .card-text{
+                            text-align: center;
+                            h3{
+                                @extend %heading3;
+                                padding-bottom: 20px;
+                            }
+                            p{
+                                @extend %paragraph;
+                                color: $white;
+                                margin-bottom: 30px;
+                            }
+                            a{
+                                @extend %white-btn;
+                                margin-right: 20px;
+                            }
+                            svg{
+                                @extend %font-icon;
+                                color: $yellow;
+                                
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

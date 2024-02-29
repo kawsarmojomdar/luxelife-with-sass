@@ -1,0 +1,99 @@
+.testomonial-area{
+    padding: 120px 60px;
+    @include lg{
+        padding: 60px 0;
+
+    }
+    // @include md{
+    //     padding: 60px 0;
+    // }
+    background: $bg-white ;
+    .container-fluid{
+            .heading{
+                position: relative;
+                
+                h2{
+                    @extend %heading2;
+                    span{
+                        position: relative;
+                        margin-left: 10px;
+                        &::after{
+                            display: block;
+                            width: 40px ;
+                            height: 2px;
+                            background: $yellow;
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                        }
+                    }
+                }
+                h3{
+                    @extend %heading1;
+                    @include md{
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .testomonial-wrapper{
+                border: 3px solid greenyellow;
+                margin:  0 10px;
+                @include lg{
+                    margin: 5px;
+                }
+                .testomonial-card{
+                    background: $white;
+                    padding: 40px;
+                    .card-img{
+                        margin-bottom: 20px;
+                    }
+                    .card-content{
+                        h3{
+                            @extend %heading3;
+                        }
+                        p{
+                            @extend %paragraph;
+                        }
+                        .star{
+                            color: $yellow;
+                            @extend %font-icon2;
+                            padding: 20px 0 10px;
+                        }
+                    }
+                }
+                
+            }
+            span.slick-arrow{
+                background: #000;
+                color: #fff;
+                padding: 10px;
+                position: absolute;
+                left: -200px;
+                bottom: 50px;
+                border-radius: 50%;
+                background: $yellow;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 20px;
+                @include md{
+                    top: -40px;
+                    left: unset;
+                    bottom: unset;
+                    right: 100px;
+                    z-index: 999;
+                }
+            }
+            span.slick-prev{
+                left: -140px;
+                @include md{
+                    right: 50px;
+                    left: unset;
+                }
+            }
+            
+            
+        
+    }
+}

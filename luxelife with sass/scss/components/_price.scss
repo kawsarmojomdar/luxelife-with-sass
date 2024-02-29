@@ -1,0 +1,77 @@
+body{
+    .price-area{
+        padding: 80px 0;
+        .container{
+            .row{
+                
+                .p-card{
+                    height: 577px;
+                    display: flex;
+                    @include lg{
+                        height: 577px;
+                    }
+                    @include sm{
+                        justify-content: center;
+                    }
+                    align-items: stretch;
+                    .price-card{
+                        position: relative;
+                        border: 1px solid $borderwhite;
+                        .card-img{
+                            padding: 30px 15px  30px 15px;
+                            background: $lightyellow;
+                        }
+                        .card-content{
+                            position: absolute;
+                            bottom:0;
+                            left: 0;
+                            right: 0;
+                            background: $white;
+                            text-align: center;
+                            padding: 30px 0;
+
+                            h3{
+                               @extend %heading3;
+                               margin: 20px 0;
+                            }
+                            span{
+                                @extend %headingtwo;
+                                margin-bottom: 10px;
+                                display: block;
+                            }
+                            .star{
+                                color: $yellow;
+                                i{
+                                    @extend %font-icon2;
+                                }
+                            }
+                            .add-btn{
+                                margin-top: 20px;
+                                @extend %button-style;
+                                align-items:center;
+                                justify-content: space-between;
+                                transition: all .5s ease;
+                                display: none;
+                                a{
+                                    color: $white;
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                }
+                            }
+                            
+                        }
+                    }
+                    &:hover {
+                         .card-content{
+                            .add-btn{
+                                display: inline-flex;
+                            }
+                         }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
